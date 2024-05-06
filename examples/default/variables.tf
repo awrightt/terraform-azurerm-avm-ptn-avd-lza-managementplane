@@ -63,7 +63,7 @@ variable "virtual_desktop_scaling_plan_name" {
 
 variable "virtual_desktop_scaling_plan_time_zone" {
   type        = string
-  default     = "Coordinated Universal Time"
+  default     = "UTC"
   description = "Specifies the Time Zone which should be used by the Scaling Plan for time based events."
 }
 
