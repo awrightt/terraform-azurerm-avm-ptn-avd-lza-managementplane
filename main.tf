@@ -199,6 +199,7 @@ module "avm_res_desktopvirtualization_scaling_plan" {
         ramp_down_stop_hosts_when            = "ZeroActiveSessions"
         off_peak_start_time                  = "18:00"
         off_peak_load_balancing_algorithm    = "BreadthFirst"
+        count = var.virtual_desktop_host_pool_type == "Personal" ? 0 : 1
       }
     ]
   )

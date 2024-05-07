@@ -1,3 +1,4 @@
+// Variables from Microsoft
 variable "description" {
   type        = string
   default     = "AVD Management Plane Deployment"
