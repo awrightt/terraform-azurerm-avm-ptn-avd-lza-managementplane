@@ -31,12 +31,12 @@ module "avd" {
   enable_telemetry                                   = var.enable_telemetry
   location                                           = azurerm_resource_group.this.location
   resource_group_name                                = azurerm_resource_group.this.name
-  user_group_name                                    = "Cloud Center of Excellence (CCoE)"
+  user_group_name                                    = var.user_group_name
   virtual_desktop_workspace_name                     = var.virtual_desktop_workspace_name
   description                                        = var.description
   virtual_desktop_scaling_plan_time_zone             = var.virtual_desktop_scaling_plan_time_zone
   virtual_desktop_scaling_plan_name                  = var.virtual_desktop_scaling_plan_name
-  virtual_desktop_host_pool_type                     = "Personal"
+  virtual_desktop_host_pool_type                     = var.virtual_desktop_host_pool_type
   virtual_desktop_host_pool_load_balancer_type       = var.virtual_desktop_host_pool_load_balancer_type
   virtual_desktop_host_pool_name                     = var.virtual_desktop_host_pool_name
   virtual_desktop_host_pool_maximum_sessions_allowed = var.virtual_desktop_host_pool_maximum_sessions_allowed
